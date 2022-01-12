@@ -26,19 +26,19 @@ Bot = Client(
 
 
 START_TEXT = """
-Hello {}, I am Telegram [Calculator-Bot](https://Github.com/ZauteKm/Calculator-Bot).
+Hello {}, I am Telegram [Calculator-Bot](https://t.me/jettastic).
 
 ▷ Send me /calculator and See my Magic.
 
-Made with by ❤️ [@ZauteKm](https://t.me/ZauteKm/604)
+Made with by ❤️ [@jettastic](https://t.me/jettastic)
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🔥 Source Code', url='https://github.com/ZauteKm/Calculator-Bot'),
-        InlineKeyboardButton('Channel 📢', url='https://t.me/tgbotsProject/152')
+        InlineKeyboardButton('🔥 Source Code', url='https://t.me/jettastic'),
+        InlineKeyboardButton('Channel 📢', url='https://t.me/jetbots/26')
         ]]
     )
-CALCULATE_TEXT = "▷ Made with by @ZauteKm"
+CALCULATE_TEXT = "▷ Made with by @jetbots"
 CALCULATE_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton("DEL", callback_data="DEL"),
@@ -139,7 +139,7 @@ async def inline(bot, update):
             answers = [
                 InlineQueryResultArticle(
                     title="Answer",
-                    description=f"Results of your input",
+                    description=f"Results of your in put",
                     input_message_content=InputTextMessageContent(
                         text=f"{data} = {text}",
                         disable_web_page_preview=True
